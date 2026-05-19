@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Support ShivanshRT</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      width:100%;
+      height:100%;
+      background:
+      radial-gradient(circle at top right,#00ffae22,transparent 30%),
+      radial-gradient(circle at bottom left,#0066ff22,transparent 30%);
+      z-index:-1;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:rgba(0,0,0,0.5);
+      backdrop-filter:blur(10px);
+      z-index:999;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo{
+      font-size:30px;
+      font-weight:bold;
+      color:#00ffae;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#00ffae;
+    }
+
+    .container{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:140px 20px 60px;
+    }
+
+    .support-card{
+
+      width:100%;
+      max-width:520px;
+
+      background:rgba(255,255,255,0.04);
+
+      border:1px solid rgba(255,255,255,0.08);
+
+      border-radius:30px;
+
+      padding:40px;
+
+      backdrop-filter:blur(12px);
+
+      box-shadow:0 0 30px rgba(0,255,174,0.08);
+
+      text-align:center;
+
+    }
+
+    .support-card h1{
+      font-size:42px;
+      color:#00ffae;
+      margin-bottom:15px;
+    }
+
+    .support-card p{
+      color:#d2d2d2;
+      line-height:1.8;
+      font-size:17px;
+      margin-bottom:30px;
+    }
+
+    .qr-box{
+
+      width:100%;
+      background:white;
+
+      border-radius:25px;
+
+      padding:18px;
+
+      margin-bottom:25px;
+
+    }
+
+    .qr-box img{
+
+      width:100%;
+      border-radius:15px;
+
+    }
+
+    .amounts{
+
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+
+      margin-top:10px;
+
+    }
+
+    .pay-btn{
+
+      padding:14px 26px;
+
+      background:#00ffae;
+
+      color:black;
+
+      text-decoration:none;
+
+      border-radius:14px;
+
+      font-weight:bold;
+
+      transition:0.3s;
+
+      box-shadow:0 0 20px rgba(0,255,174,0.3);
+
+    }
+
+    .pay-btn:hover{
+
+      transform:translateY(-4px) scale(1.05);
+
+      background:white;
+
+    }
+
+    .custom-support{
+
+      margin-top:30px;
+
+      padding:16px;
+
+      border-radius:18px;
+
+      background:rgba(255,255,255,0.04);
+
+      border:1px solid rgba(255,255,255,0.08);
+
+    }
+
+    .custom-support h3{
+      color:#00ffae;
+      margin-bottom:12px;
+    }
+
+    .custom-support p{
+      margin:0;
+      font-size:15px;
+    }
+
+    footer{
+
+      text-align:center;
+
+      padding:30px;
+
+      color:#8f8f8f;
+
+      border-top:1px solid rgba(255,255,255,0.08);
+
+      background:#080808;
+
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        display:none;
+      }
+
+      .support-card{
+        padding:28px;
+      }
+
+      .support-card h1{
+        font-size:34px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      ShivanshRT
+    </div>
+
+    <nav>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="https://youtube.com/@ShivanshRT" target="_blank">
+        YouTube
+      </a>
+
+      <a href="https://xneon.store" target="_blank">
+        Xneon
+      </a>
+
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <div class="support-card">
+
+      <h1>Support ❤️</h1>
+
+      <p>
+        Your support helps us create more futuristic
+        tech content, experiments, AI concepts,
+        drone projects and innovation videos.
+      </p>
+
+      <div class="qr-box">
+
+        <!-- QR IMAGE LINK YAHA DAALNA -->
+        <img src="https://github.com/ut72567/XNEON-Technologies-Product-And-Images-Storage.com/blob/main/IMG-20260519-WA0003.jpg">
+
+      </div>
+
+      <div class="amounts">
+
+        <!-- PAYMENT LINKS YAHA CHANGE KARNA -->
+
+        <a class="pay-btn"
+        href="YOUR_PAYMENT_LINK">
+        ₹10 Support
+        </a>
+
+        <a class="pay-btn"
+        href="upi://pay?pa=srt725bot@ptyes&pn=ShivanshRT&am=20&cu=INR">
+        ₹20 Support
+        </a>
+
+        <a class="upi://pay?pa=srt725bot@ptyes&pn=ShivanshRT&cu=INR">
+        Custom Support
+        </a>
+
+      </div>
+
+      <div class="custom-support">
+
+        <h3>Thank You 🚀</h3>
+
+        <p>
+          Every contribution supports future projects,
+          better content and next-generation ideas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    © 2026 ShivanshRT • Powered by XNEON Technologies
+
+  </footer>
+
+</body>
+</html>
