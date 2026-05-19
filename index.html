@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ShivanshRT | Official Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Official website of ShivanshRT - Tech, AI, Drones, Future Concepts and Xneon Projects">
+  <title>Support ShivanshRT</title>
 
   <style>
 
@@ -49,7 +48,7 @@
     }
 
     .logo{
-      font-size:32px;
+      font-size:30px;
       font-weight:bold;
       color:#00ffae;
     }
@@ -66,409 +65,250 @@
       color:#00ffae;
     }
 
-    .hero{
+    .container{
       min-height:100vh;
       display:flex;
       justify-content:center;
       align-items:center;
+      padding:140px 20px 60px;
+    }
+
+    .support-card{
+
+      width:100%;
+      max-width:520px;
+
+      background:rgba(255,255,255,0.04);
+
+      border:1px solid rgba(255,255,255,0.08);
+
+      border-radius:30px;
+
+      padding:40px;
+
+      backdrop-filter:blur(12px);
+
+      box-shadow:0 0 30px rgba(0,255,174,0.08);
+
       text-align:center;
-      padding:120px 8%;
+
     }
 
-    .hero-content h1{
-      font-size:70px;
-      color:#00ffae;
-      margin-bottom:20px;
-      text-shadow:0 0 25px #00ffae55;
-    }
-
-    .hero-content p{
-      max-width:900px;
-      margin:auto;
-      color:#d0d0d0;
-      line-height:1.9;
-      font-size:20px;
-    }
-
-    .buttons{
-      margin-top:35px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:15px 32px;
-      margin:10px;
-      background:#00ffae;
-      color:black;
-      text-decoration:none;
-      border-radius:14px;
-      font-weight:bold;
-      transition:0.3s;
-      box-shadow:0 0 20px #00ffae44;
-    }
-
-    .btn:hover{
-      transform:translateY(-4px) scale(1.04);
-      background:white;
-    }
-
-    section{
-      padding:90px 8%;
-    }
-
-    .section-title{
-      text-align:center;
+    .support-card h1{
       font-size:42px;
       color:#00ffae;
-      margin-bottom:45px;
+      margin-bottom:15px;
     }
 
-    .card{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:28px;
-      padding:30px;
-      backdrop-filter:blur(10px);
-      box-shadow:0 0 25px rgba(0,255,174,0.08);
+    .support-card p{
+      color:#d2d2d2;
+      line-height:1.8;
+      font-size:17px;
+      margin-bottom:30px;
     }
 
-    #latest-video iframe{
+    .qr-box{
+
       width:100%;
-      height:550px;
-      border:none;
-      border-radius:20px;
+      background:white;
+
+      border-radius:25px;
+
+      padding:18px;
+
       margin-bottom:25px;
+
     }
 
-    #latest-video h2{
+    .qr-box img{
+
+      width:100%;
+      border-radius:15px;
+
+    }
+
+    .amounts{
+
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+
+      margin-top:10px;
+
+    }
+
+    .pay-btn{
+
+      padding:14px 26px;
+
+      background:#00ffae;
+
+      color:black;
+
+      text-decoration:none;
+
+      border-radius:14px;
+
+      font-weight:bold;
+
+      transition:0.3s;
+
+      box-shadow:0 0 20px rgba(0,255,174,0.3);
+
+    }
+
+    .pay-btn:hover{
+
+      transform:translateY(-4px) scale(1.05);
+
+      background:white;
+
+    }
+
+    .custom-support{
+
+      margin-top:30px;
+
+      padding:16px;
+
+      border-radius:18px;
+
+      background:rgba(255,255,255,0.04);
+
+      border:1px solid rgba(255,255,255,0.08);
+
+    }
+
+    .custom-support h3{
       color:#00ffae;
       margin-bottom:12px;
     }
 
-    #latest-video p{
-      color:#cfcfcf;
-      line-height:1.8;
-    }
-
-    .about-text{
-      text-align:center;
-      max-width:1000px;
-      margin:auto;
-      line-height:1.9;
-      color:#d4d4d4;
-      font-size:19px;
-    }
-
-    .xneon{
-      text-align:center;
-    }
-
-    .xneon p{
-      max-width:900px;
-      margin:20px auto;
-      color:#d0d0d0;
-      line-height:1.8;
-      font-size:18px;
-    }
-
-    .socials{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      margin-top:30px;
-      flex-wrap:wrap;
-    }
-
-    .socials a{
-      padding:14px 25px;
-      background:#111;
-      border:1px solid rgba(255,255,255,0.08);
-      border-radius:14px;
-      color:white;
-      text-decoration:none;
-      transition:0.3s;
-    }
-
-    .socials a:hover{
-      background:#00ffae;
-      color:black;
+    .custom-support p{
+      margin:0;
+      font-size:15px;
     }
 
     footer{
-      padding:35px;
-      text-align:center;
-      background:#080808;
-      color:#8a8a8a;
-      border-top:1px solid rgba(255,255,255,0.08);
-    }
 
-    .loader{
-      position:fixed;
-      width:100%;
-      height:100%;
-      background:black;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      z-index:99999;
-      font-size:30px;
-      color:#00ffae;
-      transition:1s;
+      text-align:center;
+
+      padding:30px;
+
+      color:#8f8f8f;
+
+      border-top:1px solid rgba(255,255,255,0.08);
+
+      background:#080808;
+
     }
 
     @media(max-width:768px){
-
-      .hero-content h1{
-        font-size:42px;
-      }
-
-      .hero-content p{
-        font-size:16px;
-      }
 
       nav{
         display:none;
       }
 
-      #latest-video iframe{
-        height:250px;
+      .support-card{
+        padding:28px;
+      }
+
+      .support-card h1{
+        font-size:34px;
       }
 
     }
 
   </style>
+
 </head>
 
 <body>
 
-  <div class="loader" id="loader">
-    Loading ShivanshRT...
-  </div>
-
   <header>
 
-    <div class="logo">ShivanshRT</div>
+    <div class="logo">
+      ShivanshRT
+    </div>
 
     <nav>
-      <a href="#latest">Latest Video</a>
-      <a href="#about">About</a>
-      <a href="#xneon">Xneon</a>
-      <a href="https://youtube.com/@ShivanshRT" target="_blank">YouTube</a>
-    </nav>
 
-  </header>
-
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <h1>ShivanshRT 🚀</h1>
-
-      <p>
-        Welcome to the official futuristic website of ShivanshRT.
-        Explore technology, AI, drones, innovation, experiments,
-        futuristic ideas and next-generation digital concepts.
-      </p>
-
-      <div class="buttons">
-
-        <a class="btn"
-        href="https://youtube.com/@ShivanshRT"
-        target="_blank">
-        Subscribe Channel
-        </a>
-
-        <a class="btn"
-        href="https://xneon.store"
-        target="_blank">
-        Visit Xneon
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="latest">
-
-    <h2 class="section-title">
-      Latest Upload 🎬
-    </h2>
-
-    <div class="card">
-
-      <div id="latest-video">
-        <p>Loading latest video...</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="about">
-
-    <h2 class="section-title">
-      About ShivanshRT
-    </h2>
-
-    <div class="card">
-
-      <div class="about-text">
-
-        ShivanshRT is focused on futuristic technology,
-        drones, AI systems, innovation, creative experiments
-        and powerful digital ideas.
-
-        This platform shares next-generation concepts,
-        projects, experiments and technology-focused content
-        designed to inspire future creators and innovators.
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="xneon">
-
-    <h2 class="section-title">
-      Xneon ⚡
-    </h2>
-
-    <div class="card xneon">
-
-      <h2 style="color:#00ffae;">
-        Xneon Brand
-      </h2>
-
-      <p>
-        Xneon is a futuristic digital ecosystem focused on innovation,
-        smart solutions, technology products and next-generation experiences.
-      </p>
-
-      <a class="btn"
-      href="https://xneon.store"
-      target="_blank">
-      Visit Xneon.Store
+      <a href="index.html">
+        Home
       </a>
-
-    </div>
-
-  </section>
-
-  <section>
-
-    <h2 class="section-title">
-      Connect With Me 🌐
-    </h2>
-
-    <div class="socials">
 
       <a href="https://youtube.com/@ShivanshRT" target="_blank">
         YouTube
       </a>
 
-      <a href="https://instagram.com/shivanshranjantripathi" target="_blank">
-        Instagram
+      <a href="https://xneon.store" target="_blank">
+        Xneon
       </a>
 
-      <a href="https://xneon.store" target="_blank">
-        Xneon.Store
-      </a>
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <div class="support-card">
+
+      <h1>Support ❤️</h1>
+
+      <p>
+        Your support helps us create more futuristic
+        tech content, experiments, AI concepts,
+        drone projects and innovation videos.
+      </p>
+
+      <div class="qr-box">
+
+        <!-- QR IMAGE LINK YAHA DAALNA -->
+        <img src="https://github.com/ut72567/XNEON-Technologies-Product-And-Images-Storage.com/blob/main/IMG-20260519-WA0003.jpg">
+
+      </div>
+
+      <div class="amounts">
+
+        <!-- PAYMENT LINKS YAHA CHANGE KARNA -->
+
+        <a class="pay-btn"
+        href="YOUR_PAYMENT_LINK">
+        ₹10 Support
+        </a>
+
+        <a class="pay-btn"
+        href="upi://pay?pa=srt725bot@ptyes&pn=ShivanshRT&am=20&cu=INR">
+        ₹20 Support
+        </a>
+
+        <a class="upi://pay?pa=srt725bot@ptyes&pn=ShivanshRT&cu=INR">
+        Custom Support
+        </a>
+
+      </div>
+
+      <div class="custom-support">
+
+        <h3>Thank You 🚀</h3>
+
+        <p>
+          Every contribution supports future projects,
+          better content and next-generation ideas.
+        </p>
+
+      </div>
 
     </div>
 
-  </section>
+  </div>
 
   <footer>
-    © 2026 ShivanshRT • Powered by Xneon
+
+    © 2026 ShivanshRT • Powered by XNEON Technologies
+
   </footer>
-
-  <script>
-
-    window.onload = () => {
-
-      setTimeout(() => {
-
-        document.getElementById("loader").style.opacity = "0";
-
-        setTimeout(() => {
-          document.getElementById("loader").style.display = "none";
-        },1000);
-
-      },1200);
-
-    }
-
-    async function loadLatestVideo() {
-
-      try{
-
-        // CHANNEL ID
-        const rssUrl =
-        "https://www.youtube.com/feeds/videos.xml?channel_id=UCWz2mWlEXAMPLE";
-
-        const response = await fetch(rssUrl);
-
-        const text = await response.text();
-
-        const parser = new DOMParser();
-
-        const xml =
-        parser.parseFromString(text,"text/xml");
-
-        const entry = xml.querySelector("entry");
-
-        const videoId =
-        entry.getElementsByTagName("yt:videoId")[0]
-        .textContent;
-
-        const title =
-        entry.getElementsByTagName("title")[0]
-        .textContent;
-
-        const published =
-        entry.getElementsByTagName("published")[0]
-        .textContent;
-
-        document.getElementById("latest-video")
-        .innerHTML = `
-
-          <iframe
-          src="https://www.youtube.com/embed/${videoId}"
-          allowfullscreen>
-          </iframe>
-
-          <h2>${title}</h2>
-
-          <p>
-          Latest upload from ShivanshRT.<br><br>
-
-          Published:
-          ${new Date(published).toDateString()}
-          </p>
-
-        `;
-
-      }
-
-      catch(error){
-
-        document.getElementById("latest-video")
-        .innerHTML = `
-        <p>
-        Unable to load latest video right now.
-        </p>
-        `;
-
-      }
-
-    }
-
-    loadLatestVideo();
-
-  </script>
 
 </body>
 </html>
